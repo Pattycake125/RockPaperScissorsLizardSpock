@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+		<title>Rock Paper Scissors Paper Lizard Spock</title>
+		<meta charset="UTF-8">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  </head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  
+  <div class="page-header"><h2>Rock Paper Scissors Lizard Spock</h2>
+  <p>Created by Patty Cross </p>
+  </div>
+  
+	</head>
+	<body >
+			
+
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-12">
+		<!-- 1. Player enters his name. First to enter is assigned Player1 It gets registered on Firebase for game ( also WonP1, Lostp1, Tiesp1 )  -->
+				<form>
+              		<input type="text" name="Player"  placeholder="Name?" id="playerTmp">
+              		<input type="submit" value="Submit" id="enterPlayer">
+            	</form>
+            	</div>
+            	<div id="displayScore"> </div>
+        <!--  2. Either Player begins by clicking on hidden button on image of background representing rock, paper, scissors, Lizard or Spock. -->
+					<img src="assets/images/RPSLS.jpg" alt="taken from Big Bang Theory on CBS" usemap="#Map" border="0" >
+					  
+	<map name="Map" id="Map">
+    <area alt="scissors" title="" href="" shape="poly" coords="154,318,140,368,173,418,242,446,284,434,314,391,306,338,276,297,220,277" data-term="scissors" />
+    <area alt="Spock" title="" href="" shape="poly" coords="342,295,334,345,340,392,365,423,422,436,478,426,483,370,479,323,397,281" data-term="spock"/>
+    <area alt="lizard" title="" href="" shape="poly" coords="390,142,382,197,400,253,478,280,532,263,558,208,538,135,471,121" data-term="lizard" />
+    <area alt="rock" title="" href="" shape="poly" coords="255,36,311,12,362,23,382,68,388,119,372,152,319,167,276,141,238,89" data-term="rock" />
+    <area alt="paper" title="" href="" shape="poly" coords="139,131,218,148,245,165,255,198,248,233,213,265,168,274,120,253,94,200" data-term="paper"/>
+  	</map>
+										  
+
+		<!-- Next player chooses  We goto javascript to determine and register score --> 
+			
+ 		<script type="text/javascript" src="assets/js/javascript.js"></script>
+		
+
+
+		
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+	</body>
+</html>
